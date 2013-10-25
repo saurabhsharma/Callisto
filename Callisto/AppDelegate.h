@@ -7,9 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SocketClientViewController.h"
+
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (strong) IBOutlet SocketClientViewController *socketClientViewController;
+
+
 
 @end
