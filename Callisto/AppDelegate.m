@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "NewWindowController.h"
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -20,5 +20,9 @@
     self.socketClientViewController.view.frame = ((NSView*)self.window.contentView).bounds;
     
 }
+
+
+
+
 
 @end

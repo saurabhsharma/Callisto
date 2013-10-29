@@ -1,8 +1,8 @@
 //
-//  AppDelegate.h
+//  NewWindowController.h
 //  Callisto
 //
-//  Created by Saurabh Sharma on 25/10/13.
+//  Created by Saurabh Sharma on 28/10/13.
 //  Copyright (c) 2013 Saurabh Sharma. All rights reserved.
 //
 
@@ -10,11 +10,8 @@
 #import "SocketClientViewController.h"
 
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface NewWindowController : NSWindowController
 
-@property (assign) IBOutlet NSWindow *window;
 @property (strong) IBOutlet SocketClientViewController *socketClientViewController;
--(IBAction)createNewWindow:(id)sender;
-
 
 @end

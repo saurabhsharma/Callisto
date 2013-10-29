@@ -20,6 +20,8 @@
 		DC6CAC27181A8DDA00581FE3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6CAC06181A8DDA00581FE3 /* Cocoa.framework */; };
 		DC6CAC2F181A8DDA00581FE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC6CAC2D181A8DDA00581FE3 /* InfoPlist.strings */; };
 		DC6CAC31181A8DDA00581FE3 /* CallistoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6CAC30181A8DDA00581FE3 /* CallistoTests.m */; };
+		DC947D0A181E80C300F0B17E /* NewWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC947D08181E80C300F0B17E /* NewWindowController.m */; };
+		DC947D0B181E80C300F0B17E /* NewWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC947D09181E80C300F0B17E /* NewWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		DC6CAC2C181A8DDA00581FE3 /* CallistoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CallistoTests-Info.plist"; sourceTree = "<group>"; };
 		DC6CAC2E181A8DDA00581FE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DC6CAC30181A8DDA00581FE3 /* CallistoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallistoTests.m; sourceTree = "<group>"; };
+		DC947D07181E80C300F0B17E /* NewWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWindowController.h; sourceTree = "<group>"; };
+		DC947D08181E80C300F0B17E /* NewWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewWindowController.m; sourceTree = "<group>"; };
+		DC947D09181E80C300F0B17E /* NewWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +131,9 @@
 				DC5F48F8181A9EBD00D5375A /* SocketClientViewController.h */,
 				DC5F48F9181A9EBD00D5375A /* SocketClientViewController.m */,
 				DC5F48FA181A9EBD00D5375A /* SocketClientViewController.xib */,
+				DC947D07181E80C300F0B17E /* NewWindowController.h */,
+				DC947D08181E80C300F0B17E /* NewWindowController.m */,
+				DC947D09181E80C300F0B17E /* NewWindowController.xib */,
 				DC6CAC1E181A8DDA00581FE3 /* Images.xcassets */,
 				DC6CAC0D181A8DDA00581FE3 /* Supporting Files */,
 			);
@@ -240,6 +248,7 @@
 			files = (
 				DC5F48FC181A9EBD00D5375A /* SocketClientViewController.xib in Resources */,
 				DC6CAC11181A8DDA00581FE3 /* InfoPlist.strings in Resources */,
+				DC947D0B181E80C300F0B17E /* NewWindowController.xib in Resources */,
 				DC6CAC1F181A8DDA00581FE3 /* Images.xcassets in Resources */,
 				DC6CAC17181A8DDA00581FE3 /* Credits.rtf in Resources */,
 				DC6CAC1D181A8DDA00581FE3 /* MainMenu.xib in Resources */,
@@ -263,6 +272,7 @@
 			files = (
 				DC5F48FB181A9EBD00D5375A /* SocketClientViewController.m in Sources */,
 				DC6CAC1A181A8DDA00581FE3 /* AppDelegate.m in Sources */,
+				DC947D0A181E80C300F0B17E /* NewWindowController.m in Sources */,
 				DC6CAC13181A8DDA00581FE3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

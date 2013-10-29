@@ -17,4 +17,8 @@
 @property (nonatomic, retain) NSInputStream *inputStream;
 @property (nonatomic, retain) NSOutputStream *outputStream;
 
+@property (nonatomic, retain) NSString *conversation;
+@property (nonatomic, retain) IBOutlet NSTextView *conversationTxtView;
+@property (nonatomic, retain) IBOutlet NSTextField *statusMsg;
+
 @end
