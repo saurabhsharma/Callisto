@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="SocketClientViewController">
             <connections>
+                <outlet property="connectBtn" destination="gik-Rv-C3Q" id="eyP-Hs-avD"/>
                 <outlet property="conversationTxtView" destination="MPo-MB-e4S" id="Yux-hO-0Eu"/>
                 <outlet property="dataToSend" destination="xjg-Bj-2Im" id="qJP-s8-iHx"/>
                 <outlet property="port" destination="oNP-bq-Uz9" id="Ttp-5G-tqJ"/>
@@ -46,7 +47,7 @@
                     </connections>
                 </textField>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gik-Rv-C3Q">
-                    <rect key="frame" x="345" y="444" width="66" height="25"/>
+                    <rect key="frame" x="345" y="444" width="98" height="25"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="roundTextured" title="Connect" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EiF-9y-FpW">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -90,7 +91,7 @@
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3rm-d6-tSA">
                     <rect key="frame" x="18" y="255" width="123" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Conversatation" id="jMR-ZQ-TEj">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Log" id="jMR-ZQ-TEj">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -126,7 +127,7 @@
                     </scroller>
                 </scrollView>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-Bj-2Im">
-                    <rect key="frame" x="20" y="285" width="376" height="107"/>
+                    <rect key="frame" x="20" y="285" width="371" height="107"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="hjV-uz-Qf1">
                         <font key="font" metaFont="system"/>
@@ -146,17 +147,6 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iJp-uY-PZP">
-                    <rect key="frame" x="378" y="393" width="82" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="I07-hG-ZrC">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="createNewWindow:" target="-2" id="pIW-yq-FPx"/>
-                    </connections>
-                </button>
             </subviews>
         </customView>
     </objects>

@@ -8,13 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 #import "SocketClientViewController.h"
-
+#import "NewWindowController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 @property (strong) IBOutlet SocketClientViewController *socketClientViewController;
--(IBAction)createNewWindow:(id)sender;
+@property (strong) NSMutableArray *windowArr;
 
+-(IBAction)createNewWindow:(id)sender;
 
 @end

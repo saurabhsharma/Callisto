@@ -29,10 +29,12 @@
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     
-    self.socketClientViewController = [[SocketClientViewController alloc] initWithNibName:@"SocketClientViewController" bundle:nil];
+    self.window.title = @"Callisto";
     
+    self.socketClientViewController = [[SocketClientViewController alloc] initWithNibName:@"SocketClientViewController" bundle:nil];
     [self.window.contentView addSubview:self.socketClientViewController.view];
     self.socketClientViewController.view.frame = ((NSView*)self.window.contentView).bounds;
+
 }
 
 @end

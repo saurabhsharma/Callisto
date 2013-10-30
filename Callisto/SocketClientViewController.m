@@ -24,18 +24,29 @@
     return self;
 }
 
--(IBAction)createNewWindow:(id)sender{
-    
-    NewWindowController *nwc = [[NewWindowController alloc] initWithWindowNibName:@"NewWindowController"];
-    [nwc showWindow:nil];
-    
-}
+ 
 
 
 -(IBAction)connectWithServer:(id)sender {
 	
+    if ([self.connectBtn.title isEqualToString:@"Disconnect"]){
+        
+        [self.inputStream close];
+        [self.outputStream close];
+        [self.inputStream removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+        [self.outputStream removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+        self.inputStream = nil;
+        self.outputStream = nil;
+        [self.statusMsg setStringValue:@"Disconnected"];
+        [self.connectBtn setTitle:@"Connect"];
+        
+        return;
+        
+    }
+    
     CFReadStreamRef readStream;
 	CFWriteStreamRef writeStream;
+    
 	CFStreamCreatePairWithSocketToHost(NULL, (__bridge CFStringRef)[self.server stringValue], [self.port intValue], &readStream, &writeStream);
     
     self.inputStream = (__bridge_transfer NSInputStream *)readStream;
@@ -53,6 +64,7 @@
     
     self.conversation = @"";
     [self.statusMsg setStringValue:@"Disconnected"];
+    [self.connectBtn setTitle:@"Disconnect"];
     
 }
 
@@ -103,6 +115,7 @@
 		case NSStreamEventOpenCompleted:
 			NSLog(@"Stream opened");
             [self.statusMsg setStringValue:[NSString stringWithFormat:@"Connected to %@:%d",[self.server stringValue], [self.port intValue]]];
+            [self.connectBtn setTitle:@"Disconnect"];
 			break;
 		case NSStreamEventHasBytesAvailable:
             
@@ -140,6 +153,7 @@
             [theStream removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
             theStream = nil;
             [self.statusMsg setStringValue:@"Disconnected"];
+            [self.connectBtn setTitle:@"Connect"];
 			break;
 		default:
 			NSLog(@"Unknown event");

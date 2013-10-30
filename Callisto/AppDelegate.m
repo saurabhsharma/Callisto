@@ -18,10 +18,18 @@
     
     [self.window.contentView addSubview:self.socketClientViewController.view];
     self.socketClientViewController.view.frame = ((NSView*)self.window.contentView).bounds;
+
+    self.windowArr = [[NSMutableArray alloc] init];
     
 }
 
+-(IBAction)createNewWindow:(id)sender{
 
+    NewWindowController *nwc = [[NewWindowController alloc] initWithWindowNibName:@"NewWindowController"];
+    [self.windowArr addObject:nwc];
+    [nwc showWindow:nil];
+    
+}
 
 
 

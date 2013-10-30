@@ -21,4 +21,6 @@
 @property (nonatomic, retain) IBOutlet NSTextView *conversationTxtView;
 @property (nonatomic, retain) IBOutlet NSTextField *statusMsg;
 
+@property (strong) IBOutlet NSButton *connectBtn;
+
 @end

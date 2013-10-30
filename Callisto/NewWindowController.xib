@@ -20,9 +20,19 @@
             <view key="contentView" id="2">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="488"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPj-ki-3dD">
+                        <rect key="frame" x="301" y="173" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CgR-mk-Sv6">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                </subviews>
             </view>
             <connections>
-                <outlet property="delegate" destination="-2" id="4"/>
+                <outlet property="delegate" destination="-2" id="HYy-aL-zUr"/>
             </connections>
         </window>
     </objects>
